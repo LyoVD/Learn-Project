@@ -52,6 +52,7 @@ Console.WriteLine(maxDoubleValue);
 Console.WriteLine(minDoubleValue);
 Console.WriteLine(maxCharValue);
 Console.WriteLine(minCharValue);
+Console.ReadLine();
 
 
 
