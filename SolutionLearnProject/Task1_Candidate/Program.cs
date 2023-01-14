@@ -14,7 +14,7 @@ namespace Task1_Candidate
                 new SubjectScore("Math", 9),
                 new SubjectScore("Physics", 10),
                 new SubjectScore("English", 8),
-                new SubjectScore("Russian", 9),
+                new SubjectScore("Russian", 7),
                 new SubjectScore("Biology", 7),
                 new SubjectScore("Chemistry", 6),
                 new SubjectScore("Physical culture", 6),
@@ -94,8 +94,23 @@ namespace Task1_Candidate
                 Console.WriteLine(candidates[i].Person.Address.Street);
             }
 
+            int maxScore = 0;
+            string a = "Russian";
 
-
+            for (int i = 0; i < candidates.Length; i++)
+            {
+                for (int j = 0; j < candidates[i].SubjectScore.Length; j++)
+                {
+                    if (candidates[i].SubjectScore[j].Subject == a)
+                    {
+                        if (maxScore < candidates[i].SubjectScore[j].Score)
+                        {
+                            maxScore = candidates[i].SubjectScore[j].Score;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(maxScore);
 
             Console.ReadLine();
         }
