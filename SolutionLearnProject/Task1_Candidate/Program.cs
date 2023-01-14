@@ -89,12 +89,15 @@ namespace Task1_Candidate
             candidates[3] = new Candidate(person4, subjectScores4);
             candidates[4] = new Candidate(person5, subjectScores5);
 
+            for (int i = 0; i < candidates.Length; i++)
+            {
+                Console.WriteLine(candidates[i].Person.Address.Street);
+            }
 
 
 
 
-
-            Console.WriteLine("Hello, World!");
+            Console.ReadLine();
         }
     }
 }
