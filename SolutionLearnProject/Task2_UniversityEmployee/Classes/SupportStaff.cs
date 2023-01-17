@@ -13,5 +13,11 @@ namespace Task2_UniversityEmployee.Classes
         {
            JobTitle = jobTitle;
         }
+
+        public override string GetOfficialDuties()
+        {
+            return base.GetOfficialDuties() + JobTitle;
+        }
+
     }
 }

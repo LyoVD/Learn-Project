@@ -15,5 +15,10 @@ namespace Task2_UniversityEmployee.Classes
             Person = person;
             TaxID = taxID;
         }
+
+        public virtual string GetOfficialDuties()
+        {
+            return Person.Name + " " + Person.LastName + ". This person is ";
+        }
     }
 }

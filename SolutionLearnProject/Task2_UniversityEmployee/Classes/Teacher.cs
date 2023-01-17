@@ -13,5 +13,12 @@ namespace Task2_UniversityEmployee.Classes
         {
             Course = course;
         }
+
+        public override string GetOfficialDuties()
+        {
+            return base.GetOfficialDuties() + "teacher. Course: " + Course.CourseName + " " + Course.CourseDescription;
+        }
+
+
     }
 }

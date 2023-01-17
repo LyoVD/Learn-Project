@@ -16,6 +16,12 @@ namespace Task2_UniversityEmployee.Classes
             ScienceDegree = degree;
             TitleOfTeacher = title;
         }
-       
+
+        public override string GetOfficialDuties()
+        {
+            //return base.GetOfficialDuties() + " teacher(" + ScienceDegree + ", " + TitleOfTeacher + "). Course: " + Course;
+            return base.GetOfficialDuties() + " (" + ScienceDegree + ", " + TitleOfTeacher + ")";
+        }
+
     }
 }
