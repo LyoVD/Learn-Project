@@ -6,7 +6,9 @@ namespace Task1_Candidate.Classes
     {
         public SubjectScore[] SubjectScore { get; set; }
         public Person Person { get; set; }
-        public Candidate(Person person, SubjectScore[] subjectScore)
+        public Candidate(Person person, 
+                         SubjectScore[] subjectScore
+                         )
         {
             Person = person;
             SubjectScore = subjectScore;
