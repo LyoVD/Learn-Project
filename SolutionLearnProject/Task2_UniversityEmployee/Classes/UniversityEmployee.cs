@@ -9,16 +9,32 @@ namespace Task2_UniversityEmployee.Classes
     public class UniversityEmployee
     {
         public Person Person { get; set; }
-        public string TaxID { get; set; }
-        public UniversityEmployee(Person person, string taxID)
+        private int _taxId;
+        public int TaxId 
+        {
+            get
+            {
+                return _taxId;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    _taxId = value;
+                }
+            }
+        }
+        
+        public UniversityEmployee(Person person, int taxId)
         {
             Person = person;
-            TaxID = taxID;
+            TaxId = taxId;
         }
 
         public virtual string GetOfficialDuties()
         {
-            return Person.Name + " " + Person.LastName + ". This person is ";
+            return Person.Name + " " + Person.LastName + 
+                ". This person is ";
         }
     }
 }
