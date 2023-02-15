@@ -107,6 +107,7 @@ namespace Task1_Candidate
                 new ("Music", 6)
             };
 
+            
             Candidate[] candidates = new Candidate[5] {
                 new(person1, subjectScores1),
                 new(person2, subjectScores2),
@@ -115,6 +116,7 @@ namespace Task1_Candidate
                 new(person5, subjectScores5)
             };
 
+            
             foreach (var candidate in candidates)
             {
                 Console.WriteLine(candidate.Person.Address.Street);
