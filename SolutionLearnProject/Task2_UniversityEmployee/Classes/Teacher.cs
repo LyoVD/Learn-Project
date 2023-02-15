@@ -9,14 +9,17 @@ namespace Task2_UniversityEmployee.Classes
     public class Teacher: UniversityEmployee
     {    
         private Course Course { get; set; }
-        public Teacher(Person person, string taxID, Course course) : base(person, taxID)
+        
+        public Teacher(Person person, int taxID, Course course) : 
+            base(person, taxID)
         {
             Course = course;
         }
 
         public override string GetOfficialDuties()
         {
-            return base.GetOfficialDuties() + "teacher. Course: " + Course.CourseName + " " + Course.CourseDescription;
+            return base.GetOfficialDuties() + "teacher. Course: " +
+                Course.CourseName + " " + Course.CourseDescription;
         }
 
 

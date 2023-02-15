@@ -8,8 +8,8 @@ namespace Task2_UniversityEmployee.Classes
 {
     public class Course 
     {
-        public string CourseName;
-        public string CourseDescription;
+        public string CourseName { get; set; }
+        public string CourseDescription { get; set; }
 
         public Course(string name, string description)
         {

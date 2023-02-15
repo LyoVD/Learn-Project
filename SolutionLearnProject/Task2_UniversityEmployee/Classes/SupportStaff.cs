@@ -8,8 +8,10 @@ namespace Task2_UniversityEmployee.Classes
 {
     public class SupportStaff : UniversityEmployee
     {
-        public string JobTitle;
-        public SupportStaff(Person person, string taxID, string jobTitle) : base(person, taxID)
+        public string JobTitle { get; set; }
+        
+        public SupportStaff(Person person, int taxID, string jobTitle) : 
+            base(person, taxID)
         {
            JobTitle = jobTitle;
         }

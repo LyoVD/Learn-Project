@@ -12,6 +12,7 @@ namespace Task2_UniversityEmployee.Classes
         public string Name { get; set; }
         public string LastName { get; set; }
         public Address Address { get; set; }
+        
         public Person(string name, string lastName, Address address)
         {
             Name = name;
