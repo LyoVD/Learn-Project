@@ -37,6 +37,7 @@ namespace Task1_Candidate.Classes
                 }
             }
         }
+        
         public Address(string city, 
                        string street, 
                        int house, 

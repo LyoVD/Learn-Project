@@ -22,6 +22,7 @@ namespace Task1_Candidate.Classes
             }
         }
         public string Subject { get; set; }
+        
         public SubjectScore(string subject, int score)
         {
             Score = score;
