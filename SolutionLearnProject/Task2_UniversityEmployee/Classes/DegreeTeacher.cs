@@ -25,10 +25,10 @@ namespace Task2_UniversityEmployee.Classes
 
         public override string GetOfficialDuties()
         {
-            //return base.GetOfficialDuties() + " teacher(" + ScienceDegree +
-            //", " + TitleOfTeacher + "). Course: " + Course;
-            return base.GetOfficialDuties() + " (" + ScienceDegree + 
-                ", " + TitleOfTeacher + ")";
+            return Person.Name + " " + Person.LastName +
+                ". This person is teacher. Course: " +
+                Course.CourseName + " " + Course.CourseDescription + 
+                " (" + ScienceDegree + ", " + TitleOfTeacher + ")";
         }
 
     }

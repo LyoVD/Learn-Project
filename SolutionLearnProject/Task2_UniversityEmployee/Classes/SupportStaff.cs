@@ -18,7 +18,8 @@ namespace Task2_UniversityEmployee.Classes
 
         public override string GetOfficialDuties()
         {
-            return base.GetOfficialDuties() + JobTitle;
+            return Person.Name + " " + Person.LastName +
+               ". This person is " + JobTitle;
         }
 
     }
