@@ -8,7 +8,7 @@ namespace Task2_UniversityEmployee.Classes
 {
     public class Teacher: UniversityEmployee
     {    
-        private Course Course { get; set; }
+        public Course Course { get; set; }
         
         public Teacher(Person person, int taxID, Course course) : 
             base(person, taxID)
@@ -18,7 +18,8 @@ namespace Task2_UniversityEmployee.Classes
 
         public override string GetOfficialDuties()
         {
-            return base.GetOfficialDuties() + "teacher. Course: " +
+            return Person.Name + " " + Person.LastName +
+                ". This person is teacher. Course: " +
                 Course.CourseName + " " + Course.CourseDescription;
         }
 
